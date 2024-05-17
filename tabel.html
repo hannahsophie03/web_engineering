@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Different Sized Cells</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<h2>My Table</h2>
+
+<table>
+    <tr>
+        <th style="width: 30%;">Title 1</th>
+        <th style="width: 30%;">Title 2</th>
+        <th style="width: 30%;">Title 3</th>
+        <th style="width: 30%;">Title 4</th>
+    </tr>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+
+    </tr>
+    <tr>
+        <td>Cell 5</td>
+        <td colspan="2" rowspan="2">Cell 6</td>
+        <td>Cell 7</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Cell 6</td>
+        <td>Cell 5</td>
+    </tr>
+    <tr>
+        <td>Cell 5</td>
+        <td colespan="2">Cell 6</td>
+        <td>Cell 5</td>
+
+    </tr>
+</table>
+
+</body>
+</html>
